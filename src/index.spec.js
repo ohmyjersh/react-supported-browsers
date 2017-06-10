@@ -1,5 +1,31 @@
 import supportedBrowser, { isBrowserSupported } from './index';
 
+test(`should should 'pass' for valid browser`, () => {
+  const supported = {
+    browsers: [
+      {
+        browser: 'chrome',
+        version: '42',
+      },
+    ],
+    required: false,
+  };
+  expect(supportedBrowser('pass', 'fail', supported)).toBe('pass');
+});
+
+test(`should should 'fail' for valid browser`, () => {
+  const supported = {
+    browsers: [
+      {
+        browser: 'chrome',
+        version: '42',
+      },
+    ],
+    required: true,
+  };
+  expect(supportedBrowser('pass', 'fail', supported)).toBe('fail');
+});
+
 describe('should handle different versions and supported browsers', () => {
   it('should show true on valid browser', () => {
     const supported = {

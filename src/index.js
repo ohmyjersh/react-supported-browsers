@@ -1,7 +1,7 @@
 import browser from 'detect-browser';
 
 export default (valid, invalid, supported) => {
-  return isBrowserSupported(supported) ? valid : invalid;
+  return isBrowserSupported(supported, browser) ? valid : invalid;
 };
 
 export const getVersion = ver => {
