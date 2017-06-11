@@ -81,7 +81,7 @@ describe('should handle different versions and supported browsers', () => {
     ).toBe(false);
   });
 
-  it('should show false on valid browser', () => {
+  it('should show true on valid browser', () => {
     const supported = {
       browsers: [
         {
@@ -99,7 +99,7 @@ describe('should handle different versions and supported browsers', () => {
     ).toBe(true);
   });
 
-  it('should show false on valid browser', () => {
+  it('should show true on valid browser', () => {
     const supported = {
       browsers: [
         {

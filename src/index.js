@@ -5,10 +5,11 @@ export default (keyMaster, venkman, supported) => {
 };
 
 export const getVersion = ver => {
-  return ver.split('.')[0];
+  return parseInt(ver.split('.')[0]);
 };
 
 export const isBrowserSupported = (supported, currentBrowser) => {
+  console.log(currentBrowser);
   const supportedBrowser = supported.browsers.find(
     x => x.browser === currentBrowser.name
   );
