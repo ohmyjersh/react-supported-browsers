@@ -1,7 +1,7 @@
 import browser from 'detect-browser';
 
-export default (valid, invalid, supported) => {
-  return isBrowserSupported(supported, browser) ? valid : invalid;
+export default (keyMaster, venkman, supported) => {
+  return isBrowserSupported(supported, browser) ? keyMaster : venkman;
 };
 
 export const getVersion = ver => {
