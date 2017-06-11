@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "repository": {
-    "url": "https://github.com/ohmyjersh/react-supported-browsers.git",
+    "url": "https://github.com/ohmyjersh/zuul.git",
     "type": "git"
   },
   "author": "Josh Jarmain",
