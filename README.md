@@ -1,2 +1,2 @@
 # zuul
-high order component to check if browser is supported, if not show a helpful message
+high order function to check if browser is supported
