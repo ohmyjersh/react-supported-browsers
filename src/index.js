@@ -4,12 +4,7 @@ export default (keyMaster, venkman, supported) => {
   return isBrowserSupported(supported, browser) ? keyMaster : venkman;
 };
 
-export const getVersion = ver => {
-  return parseInt(ver.split('.')[0]);
-};
-
 export const isBrowserSupported = (supported, currentBrowser) => {
-  console.log(currentBrowser);
   const supportedBrowser = supported.browsers.find(
     x => x.browser === currentBrowser.name
   );
@@ -21,4 +16,8 @@ export const isBrowserSupported = (supported, currentBrowser) => {
     );
   }
   return true;
+};
+
+const getVersion = ver => {
+  return parseInt(ver.split('.')[0]);
 };
